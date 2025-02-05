@@ -3158,7 +3158,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shopify/react-native-skia@npm:^1.11.4":
+"@shopify/react-native-skia@npm:1.11.4":
   version: 1.11.4
   resolution: "@shopify/react-native-skia@npm:1.11.4"
   dependencies:
@@ -3176,6 +3176,27 @@ __metadata:
   bin:
     setup-skia-web: ./scripts/setup-canvaskit.js
   checksum: 10/1209fed2dd5e719032fcd239bb810a6ec1770068d94c90cd0f7c2a3e2539f0478c2f3a1b178fe61468ef56259bd4511b5c67b836061b33db6586b2058b0f46de
+  languageName: node
+  linkType: hard
+
+"@shopify/react-native-skia@patch:@shopify/react-native-skia@npm%3A1.11.4#~/.yarn/patches/@shopify-react-native-skia-npm-1.11.4-3f500100c2.patch":
+  version: 1.11.4
+  resolution: "@shopify/react-native-skia@patch:@shopify/react-native-skia@npm%3A1.11.4#~/.yarn/patches/@shopify-react-native-skia-npm-1.11.4-3f500100c2.patch::version=1.11.4&hash=ba85ec"
+  dependencies:
+    canvaskit-wasm: "npm:0.39.1"
+    react-reconciler: "npm:0.27.0"
+  peerDependencies:
+    react: ">=18.0"
+    react-native: ">=0.64"
+    react-native-reanimated: ">=2.0.0"
+  peerDependenciesMeta:
+    react-native:
+      optional: true
+    react-native-reanimated:
+      optional: true
+  bin:
+    setup-skia-web: ./scripts/setup-canvaskit.js
+  checksum: 10/9ca8323ce4f18a494e8d4920833573490c35e63aaf32828d942978c703f50c40c09ee74fc8642348df2d53c83f99c35d4049f3eae8a02f277806b481d1341050
   languageName: node
   linkType: hard
 
@@ -10565,7 +10586,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solito-blank@workspace:."
   dependencies:
-    "@shopify/react-native-skia": "npm:^1.11.4"
+    "@shopify/react-native-skia": "patch:@shopify/react-native-skia@npm%3A1.11.4#~/.yarn/patches/@shopify-react-native-skia-npm-1.11.4-3f500100c2.patch"
     "@types/react": "npm:^18.2.21"
     eslint: "npm:^8.21.0"
     turbo: "npm:^1.4.2"

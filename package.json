@@ -17,6 +17,6 @@
   },
   "packageManager": "yarn@4.1.1",
   "dependencies": {
-    "@shopify/react-native-skia": "1.11.4"
+    "@shopify/react-native-skia": "patch:@shopify/react-native-skia@npm%3A1.11.4#~/.yarn/patches/@shopify-react-native-skia-npm-1.11.4-3f500100c2.patch"
   }
 }
