@@ -19,7 +19,16 @@ const nextConfig = {
     'react-native-reanimated',
     '@expo/html-elements',
     'react-native-gesture-handler',
+    '@shopify/react-native-skia',
   ],
+  webpack: (config) => {
+    config.resolve.alias["react-native/Libraries/Image/AssetRegistry"] = false;
+    if(!config.resolve.fallback) {
+      config.resolve.fallback = {}
+    }
+    config.resolve.fallback.fs = false
+    return config
+  }
 }
 
 module.exports = withExpo(nextConfig)
